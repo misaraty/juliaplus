@@ -53,13 +53,12 @@ ENV["JULIA_PKG_SERVER"] = "https://mirrors.bfsu.edu.cn/julia"
 
 # Packages
 
-modify `C:\Users\lenovo\AppData\Local\Programs\Julia-1.8.2\etc\julia\startup.jl`, 
-
 * [CarrierCapture.jl](https://github.com/WMD-group/CarrierCapture.jl)
 
 ```bash
-export JULIA_PKG_SERVER=https://mirrors.bfsu.edu.cn/julia
-using Pkg; Pkg.add(PackageSpec(url="https://github.com/WMD-group/CarrierCapture.jl.git")); Pkg.test("CarrierCapture")
+using Pkg; Pkg.add(PackageSpec(url="https://github.com/WMD-group/CarrierCapture.jl.git"))
+using CarrierCapture
+; Pkg.test("CarrierCapture")
 ```
 
 ## Contact
