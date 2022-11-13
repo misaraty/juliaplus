@@ -43,7 +43,7 @@ Warning: The scripts are not suitable for Windows11, because they will report an
 
 > Windows 11
 
-* Download [Julia 64-bit (installer)](https://julialang.org/downloads/)
+* Download [Julia 64-bit (installer)](https://julialang.org/downloads/).
 
 Modify `C:\Users\lenovo\AppData\Local\Programs\Julia-1.8.2\etc\julia\startup.jl`, 
 
