@@ -32,7 +32,7 @@ export PATH=$PATH:/home/misaraty/soft/julia-1.6.4/bin
 export JULIA_DEPOT_PATH="/home/misaraty/soft/julia-1.6.4/.julia"
 ```
 
-> Windows 7/8/10
+### Windows 7/8/10
 
 * Download [Julia 64-bit (portable)](https://julialang.org/downloads/) and [scripts](https://github.com/misaraty/juliaplus/tree/master/windows).
 
