@@ -40,6 +40,13 @@ export JULIA_DEPOT_PATH="/home/misaraty/soft/julia-1.6.4/.julia"
 
 Warning: The scripts are not suitable for Windows11, because they will report an error `The data being saved is truncated to 1024 characters`.
 
+* Modify `C:\Users\lenovo\AppData\Local\Programs\Julia-1.8.2\etc\julia\startup.jl`, 
+
+```bash
+ENV["HTTP_PROXY"] = "socks5://127.0.0.1:7890"
+ENV["HTTPS_PROXY"] = "socks5://127.0.0.1:7890"
+```
+
 > Windows 11
 
 * Download [Julia 64-bit (installer)](https://julialang.org/downloads/).
