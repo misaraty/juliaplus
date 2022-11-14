@@ -4,13 +4,13 @@
 
 **Julia+** is a distribution of the Julia programming language for scientific computingin in an offline environment.
 
-Julia v1.8.2 with [CarrierCapture.jl](https://github.com/WMD-group/CarrierCapture.jl) package, and will be continuously updated.
+Julia v1.8.2 with [CarrierCapture.jl](https://github.com/WMD-group/CarrierCapture.jl), [PyCall.jl](https://github.com/JuliaPy/PyCall.jl) packages, and will be continuously updated.
 
-Runtime environment: Centos 7+/GCC 4.8.5+, Windows 7/8/10/11.
+Runtime environment: Centos 7+, Windows 7/8/10/11.
 
 ## Usage
 
-> Linux
+> Centos 7+
 
 * Download JuliaPP from [cloud.189.cn](https://cloud.189.cn/web/share?code=Ab6N3aQFJry2) (access code: byy8), then install openmpi4.1.2 (needed by MPI.jl), 
 
@@ -48,7 +48,8 @@ Warning: The scripts are not suitable for Windows11, because they will report an
 Modify `C:\Users\lenovo\AppData\Local\Programs\Julia-1.8.2\etc\julia\startup.jl`, 
 
 ```bash
-ENV["JULIA_PKG_SERVER"] = "https://mirrors.bfsu.edu.cn/julia"
+ENV["HTTP_PROXY"] = "socks5://127.0.0.1:7890"
+ENV["HTTPS_PROXY"] = "socks5://127.0.0.1:7890"
 ```
 
 # Packages
@@ -56,9 +57,19 @@ ENV["JULIA_PKG_SERVER"] = "https://mirrors.bfsu.edu.cn/julia"
 * [CarrierCapture.jl](https://github.com/WMD-group/CarrierCapture.jl)
 
 ```bash
-using Pkg; Pkg.add(PackageSpec(url="https://github.com/WMD-group/CarrierCapture.jl.git"))
+using Pkg; Pkg.add(PackageSpec(url="https://github.com/WMD-group/CarrierCapture.jl.git#v0.1.0"))
+using Pkg; Pkg.add(PackageSpec(url="https://github.com/WMD-group/CarrierCapture.jl"))
 using CarrierCapture
-; Pkg.test("CarrierCapture")
+import Pkg; Pkg.add("Plots"); Pkg.add("LaTeXStrings");Pkg.add("DataFrames")
+```
+
+[PyCall.jl](https://github.com/JuliaPy/PyCall.jl)
+
+```bash
+using Pkg; Pkg.add("PyCall")
+ENV["PYTHON"]="C:/Users/lenovo/anaconda3/python.exe"
+using Pkg; Pkg.build("PyCall")
+using PyCall
 ```
 
 ## Contact
