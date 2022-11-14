@@ -63,7 +63,7 @@ using CarrierCapture
 import Pkg; Pkg.add("Plots"); Pkg.add("LaTeXStrings");Pkg.add("DataFrames")
 ```
 
-[PyCall.jl](https://github.com/JuliaPy/PyCall.jl)
+* [PyCall.jl](https://github.com/JuliaPy/PyCall.jl)
 
 ```bash
 using Pkg; Pkg.add("PyCall")
