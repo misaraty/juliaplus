@@ -34,7 +34,7 @@ export JULIA_DEPOT_PATH="/home/misaraty/soft/julia-1.6.4/.julia"
 
 ### Windows 7/8/10
 
-* Download [Julia 64-bit (portable)](https://julialang.org/downloads/) and [scripts](https://github.com/misaraty/juliaplus/tree/master/windows).
+* Download [Julia v1.8.2 64-bit (portable)](https://julialang.org/downloads/) and [scripts](https://github.com/misaraty/juliaplus/tree/master/windows).
 
 * Put the scripts into the Julia decompression path, and run `add_path.bat` or `delete_path.bat` as an administrator to add or delete environment variables, respectively.
 
@@ -49,7 +49,7 @@ ENV["HTTPS_PROXY"] = "socks5://127.0.0.1:7890"
 
 ### Windows 11
 
-* Download [Julia 64-bit (installer)](https://julialang.org/downloads/).
+* Download [Julia v1.8.2 64-bit (installer)](https://julialang.org/downloads/).
 
 * Modify `C:\Users\lenovo\AppData\Local\Programs\Julia-1.8.2\etc\julia\startup.jl`, 
 
