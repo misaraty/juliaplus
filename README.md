@@ -57,10 +57,9 @@ ENV["HTTPS_PROXY"] = "socks5://127.0.0.1:7890"
 * [CarrierCapture.jl](https://github.com/WMD-group/CarrierCapture.jl)
 
 ```bash
-using Pkg; Pkg.add(PackageSpec(url="https://github.com/WMD-group/CarrierCapture.jl.git#v0.1.0"))
 using Pkg; Pkg.add(PackageSpec(url="https://github.com/WMD-group/CarrierCapture.jl"))
-using CarrierCapture
 import Pkg; Pkg.add("Plots"); Pkg.add("LaTeXStrings");Pkg.add("DataFrames")
+using CarrierCapture
 ```
 
 * [PyCall.jl](https://github.com/JuliaPy/PyCall.jl)
