@@ -58,7 +58,7 @@ ENV["HTTPS_PROXY"] = "socks5://127.0.0.1:7890"
 
 ```bash
 using Pkg; Pkg.add(PackageSpec(url="https://github.com/WMD-group/CarrierCapture.jl"))
-import Pkg; Pkg.add("Plots"); Pkg.add("LaTeXStrings");Pkg.add("DataFrames")
+Pkg.add("Plots"); Pkg.add("LaTeXStrings");Pkg.add("DataFrames")
 using CarrierCapture
 ```
 
