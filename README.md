@@ -23,7 +23,8 @@ tar -zxvf julia-1.8.2-linux-x86_64.tar.gz
 ```bash
 # julia
 export PATH=$PATH:/home/misaraty/soft/julia-1.8.2/bin
-export JULIA_DEPOT_PATH="/home/misaraty/soft/julia-1.8.2/.julia"
+export JULIA_PKG_SERVER=https://mirrors.bfsu.edu.cn/julia
+# export JULIA_DEPOT_PATH="/home/misaraty/soft/julia-1.8.2/.julia"
 ```
 
 ### Windows 7/8/10
