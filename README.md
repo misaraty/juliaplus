@@ -12,24 +12,20 @@ Runtime environment: Centos 7+, Windows 7/8/10/11.
 
 > Centos 7+
 
-* Download JuliaPP from [cloud.189.cn](https://cloud.189.cn/web/share?code=Ab6N3aQFJry2) (access code: byy8), then install openmpi4.1.2 (needed by MPI.jl), 
+* Download [Julia v1.8.2 64-bit (.tar.gz)](https://julialang.org/downloads/) and unzip,
 
 ```bash
-tar -zxvf openmpi-4.1.2.tar.gz
-./configure --prefix=/home/misaraty/soft/openmpi --enable-static
-#./configure --prefix=/home/misaraty/soft/openmpi --enable-static CC=gcc CXX=g++ F77=gfortran FC=gfortran F90=gfortran
-make
-make install
+tar -zxvf julia-1.8.2-linux-x86_64.tar.gz
 ```
 
-or use the included compiled openmpi in JuliaPP.
-
-* Modify `.bashrc` or `.bash_profile`.
+* Modify `.bashrc` or `.bash_profile`,
 
 ```bash
-## julia
-export PATH=$PATH:/home/misaraty/soft/julia-1.6.4/bin
-export JULIA_DEPOT_PATH="/home/misaraty/soft/julia-1.6.4/.julia"
+# julia
+export PATH=$PATH:/home/misaraty/soft/julia-1.8.2/bin
+export JULIA_DEPOT_PATH="/home/misaraty/soft/julia-1.8.2/.julia"
+export HTTP_PROXY="socks5://127.0.0.1:7890"
+export HTTPS_PROXY="socks5://127.0.0.1:7890"
 ```
 
 ### Windows 7/8/10
