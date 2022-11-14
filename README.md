@@ -28,7 +28,6 @@ or use the included compiled openmpi in JuliaPP.
 
 ```bash
 ## julia
-##export JULIA_PKG_SERVER=https://mirrors.tuna.tsinghua.edu.cn/julia
 export PATH=$PATH:/home/misaraty/soft/julia-1.6.4/bin
 export JULIA_DEPOT_PATH="/home/misaraty/soft/julia-1.6.4/.julia"
 ```
@@ -45,7 +44,7 @@ Warning: The scripts are not suitable for Windows11, because they will report an
 
 * Download [Julia 64-bit (installer)](https://julialang.org/downloads/).
 
-Modify `C:\Users\lenovo\AppData\Local\Programs\Julia-1.8.2\etc\julia\startup.jl`, 
+* Modify `C:\Users\lenovo\AppData\Local\Programs\Julia-1.8.2\etc\julia\startup.jl`, 
 
 ```bash
 ENV["HTTP_PROXY"] = "socks5://127.0.0.1:7890"
