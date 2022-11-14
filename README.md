@@ -67,7 +67,7 @@ using CarrierCapture
 ```bash
 using Pkg; Pkg.add("PyCall")
 ENV["PYTHON"]="C:/Users/lenovo/anaconda3/python.exe"
-using Pkg; Pkg.build("PyCall")
+Pkg.build("PyCall")
 using PyCall
 ```
 
