@@ -52,7 +52,7 @@ ENV["HTTP_PROXY"] = "socks5://127.0.0.1:7890"
 ENV["HTTPS_PROXY"] = "socks5://127.0.0.1:7890"
 ```
 
-# Packages
+## Packages
 
 * [CarrierCapture.jl](https://github.com/WMD-group/CarrierCapture.jl)
 
