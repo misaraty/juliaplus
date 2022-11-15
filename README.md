@@ -2,7 +2,7 @@
 <img src="https://github.com/misaraty/juliaplus/blob/master/logo.jpg" width=300px height=auto/>
 </p>
 
-**Julia+** is a project that provides third-party scientific computing packages.
+**Julia+** is a project that provides installation of third-party scientific computing packages.
 
 Julia v1.8.2 with [CarrierCapture.jl](https://github.com/WMD-group/CarrierCapture.jl), [PyCall.jl](https://github.com/JuliaPy/PyCall.jl) packages, and will be continuously updated.
 
