@@ -12,7 +12,7 @@ Runtime environment: Centos 7+, Windows 7/8/10/11.
 
 > Centos 7+
 
-* Download [Julia v1.8.2 64-bit (.tar.gz)](https://julialang.org/downloads/) and unzip,
+* Download [Julia v1.8.2 64-bit (.tar.gz)](https://julialang.org/downloads/), then,
 
 ```bash
 tar -zxvf julia-1.8.2-linux-x86_64.tar.gz
