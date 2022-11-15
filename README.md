@@ -8,7 +8,7 @@ Julia v1.8.2 with [CarrierCapture.jl](https://github.com/WMD-group/CarrierCaptur
 
 Runtime environment: Centos 7+, Windows 7/8/10/11.
 
-## Usage
+## Preparations before installation
 
 > Centos 7+
 
@@ -61,7 +61,7 @@ ENV["HTTP_PROXY"] = "socks5://127.0.0.1:7890"
 ENV["HTTPS_PROXY"] = "socks5://127.0.0.1:7890"
 ```
 
-## Packages
+## Third-party package installation
 
 * [CarrierCapture.jl](https://github.com/WMD-group/CarrierCapture.jl)
 
