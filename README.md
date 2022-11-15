@@ -27,7 +27,7 @@ export JULIA_PKG_SERVER=https://mirrors.bfsu.edu.cn/julia
 # export JULIA_DEPOT_PATH="/home/misaraty/soft/julia-1.8.2/.julia"
 ```
 
-* Accelerate git
+* Accelerate git,
 
 ```bash
 mk ~/.git
