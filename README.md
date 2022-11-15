@@ -10,7 +10,7 @@ Runtime environment: Centos 7+, Windows 7/8/10/11.
 
 ## Preparations before installation
 
-> Centos 7+
+### Centos 7+
 
 * Download [Julia v1.8.2 64-bit (.tar.gz)](https://julialang.org/downloads/), then,
 
