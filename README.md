@@ -27,6 +27,14 @@ export JULIA_PKG_SERVER=https://mirrors.bfsu.edu.cn/julia
 # export JULIA_DEPOT_PATH="/home/misaraty/soft/julia-1.8.2/.julia"
 ```
 
+* Accelerate git
+
+```bash
+mk ~/.git
+git config --global url."https://ghproxy.com/https://github.com/".insteadOf "https://github.com/"
+git config protocol.https.allow always
+```
+
 ### Windows 7/8/10
 
 * Download [Julia v1.8.2 64-bit (portable)](https://julialang.org/downloads/) and [scripts](https://github.com/misaraty/juliaplus/tree/master/windows).
@@ -60,6 +68,7 @@ ENV["HTTPS_PROXY"] = "socks5://127.0.0.1:7890"
 ```bash
 using Pkg; Pkg.add(PackageSpec(url="https://github.com/WMD-group/CarrierCapture.jl"))
 Pkg.add("Plots"); Pkg.add("LaTeXStrings");Pkg.add("DataFrames")
+# import Pkg; Pkg.precompile()
 using CarrierCapture
 ```
 
